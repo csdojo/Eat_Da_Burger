@@ -23,4 +23,4 @@ var routes = require("./controllers/burgersController.js");
 app.use(routes);
 
 // Start our server so that it can begin listening to client requests.
-app.listen(process.env.PORT || 5000)
+log.Fatal(http.ListenAndServe(":" + os.Getenv("PORT"), router))
